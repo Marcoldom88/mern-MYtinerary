@@ -26,7 +26,9 @@ const LandingPage = () => {
         </section>
       </main>
       <footer className="fixed-bottom">
-        <img className="home" src="assets/homeIcon.png" alt="House icon"></img>
+        <Link to="">
+          <img className="home" src="assets/homeIcon.png" alt="House icon"></img>
+        </Link>
       </footer>
     </section>
   )
