@@ -7,7 +7,9 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.3",
+    "concurrently": "^7.6.0",
     "express": "^4.18.2",
+    "mongoose": "^6.8.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
@@ -16,9 +18,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "concurrently \"nodemon server.js\" \"cd../client && npm start\"",
+    "server": "nodemon server.js",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -41,6 +44,7 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
+  "start": "nodemon server.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Marcoldom88/mern-MYtinerary.git"
@@ -50,5 +54,8 @@
   "bugs": {
     "url": "https://github.com/Marcoldom88/mern-MYtinerary/issues"
   },
-  "homepage": "https://github.com/Marcoldom88/mern-MYtinerary#readme"
+  "homepage": "https://github.com/Marcoldom88/mern-MYtinerary#readme",
+  "devDependencies": {
+    "@craco/craco": "^7.0.0"
+  }
 }

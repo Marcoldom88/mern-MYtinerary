@@ -16,6 +16,6 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-module.exports = function(width, height) {
-  return width * height;
-};
+const mongoose = require('mongoose');
+const uri = "mongodb+srv://marcoldom:Yaco.23515@marcoldom1.4jqpuuu.mongodb.net/?retryWrites=true&w=majority";
+await mongoose.connect(uri);

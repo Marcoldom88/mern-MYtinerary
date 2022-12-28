@@ -9,7 +9,7 @@ function App() {
           <LandingPage />
           <Routes>
             <Route index element={""} />
-            <Route path='/schedule' element={""} />
+            <Route path='' element={""} />
           </Routes>
         </div>
     </Router>
