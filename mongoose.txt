@@ -1,0 +1,4 @@
+
+const mongoose = require('mongoose');
+const uri = "mongodb+srv://marcoldom:Yaco.23515@marcoldom1.4jqpuuu.mongodb.net/?retryWrites=true&w=majority";
+await mongoose.connect(uri);
