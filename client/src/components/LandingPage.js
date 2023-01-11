@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
   return (
-    <section>
-      <main className="page-container">
+    <section className="page">
+      <main className="main-container">
         <section className="header">
           <img className="logo" src="assets/MYtineraryLogo.png" alt="Mytinerary Logo"></img>
           <br /><p>Find your perfect trip, designed by insiders who know and love their cities</p>
@@ -12,7 +12,7 @@ const LandingPage = () => {
         <section>
           <div className="arrow-container">
             <h2>Start browsing</h2>
-            <Link to="">
+            <Link to="./BrowseCities">
               <img className="arrow" src="assets/circled-right-2.png" alt="circle with arrow pointing right"></img>
             </Link>
           </div>

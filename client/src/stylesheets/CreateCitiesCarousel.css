@@ -1,0 +1,15 @@
+.main-container {
+  min-width: 375px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  margin: 20px;
+  padding: 5px;
+  text-align: center;
+  height: 100vh;
+  border-radius: 15px;
+  background-color: #FFF;
+  box-shadow: 0 3px 13px 1px rgb(220, 43, 0, 0.5);
+}
