@@ -6,7 +6,7 @@
 }
 
 .main-container {
-  min-width: 375px;
+  
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -43,6 +43,10 @@
 
 a {
   color: #DC2B00;
+}
+
+.fixed-bottom{
+  bottom: 10px
 }
 
 footer {

@@ -21,7 +21,10 @@ const BrowseCities = () => {
     </div>
 
   return (
-    <CreateCitiesCarousel cities = {cities} />
+    <>
+      <CreateCitiesCarousel cities = {cities} />
+    </>
+    
   )
 }
 
