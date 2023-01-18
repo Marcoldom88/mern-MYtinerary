@@ -1,19 +1,27 @@
 import CreateCitiesCarousel from "./CreateCitiesCarousel";
-import { useState, useEffect } from "react";
+import { useGetCitiesQuery } from "../store/features/apiSlice";
 
 const BrowseCities = () => {
- const [cities, setCities] = useState();
-  const url = "http://localhost:5000/all";
-  useEffect(() => {
-    const fetchCities = async () => {
-      const response = await fetch(url);
-      if (!response.ok) throw response;
-      const json = await response.json();
-      setCities(json);
-    }
-    fetchCities();
-  }, []);
+ const {
+    data: cities,
+    isLoading,
+    isSuccess,
+    isError,
+    error
+  } = useGetCitiesQuery()
 
+  let content
+
+  if (isLoading) {
+    content =
+      <div className="spinner-border text-success" role="status">
+        <span className="visually-hidden">Loading...</span>
+      </div>
+  } else if (isSuccess) {
+    content = <CreateCitiesCarousel cities = {cities} />
+  } else if (isError) {
+    content = <div>{error.toString()}</div>
+  }
 
   if (!cities) return
     <div className="spinner-border text-success" role="status">
@@ -22,7 +30,7 @@ const BrowseCities = () => {
 
   return (
     <>
-      <CreateCitiesCarousel cities = {cities} />
+      {content}
     </>
     
   )
