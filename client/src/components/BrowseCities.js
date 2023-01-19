@@ -9,7 +9,7 @@ const BrowseCities = () => {
     isError,
     error
   } = useGetCitiesQuery()
-
+console.log(cities)
   let content
 
   if (isLoading) {
