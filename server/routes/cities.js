@@ -15,13 +15,13 @@ router.get('/all', (req, res) => {
     .catch(err => console.log(err));
 });
 
-router.get('/all/:nombre', (req, res) => {
+/*router.get('/all/:nombre', (req, res) => {
   cityModel.find({})
     .then(files => {
       res.send(files)
     })
     .catch(err => console.log(err));
-});
+});*/
 
 
 //post new city

@@ -48,7 +48,8 @@ const CreateCitiesCarousel = ({ cities }) => {
           <Carousel data={data} />
         </div>
         <div className="button-container">
-          <button onClick={handleOnClick}>Search for a new city</button>
+          <button className="carousel-button"
+            onClick={handleOnClick}>Search for a new city</button>
         </div>
       </div>
     </main>

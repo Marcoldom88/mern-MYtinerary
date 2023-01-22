@@ -1,5 +1,6 @@
 .itinerariesContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 80%;
@@ -14,10 +15,11 @@
   align-items: center;
   margin: auto;
   width: 50rem;
-  height: 40rem;
+  height: auto;
   border-radius: 15px;
   background-color: #FFF;
   box-shadow: 0 3px 13px 1px rgba(220, 43, 0, 0.5);
+
 }
 
 .MYtinerary {
@@ -28,9 +30,15 @@
 }
 
 .itinerary-frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
   width: 45rem;
+  height: auto;
   border-radius: 15px;
   border: solid #394E56 0.3px;
+  margin: 15px;
 }
 
 .picture-container{
@@ -42,4 +50,23 @@
   height: 12rem;
   border-radius: 15px;
   object-fit: cover;
+}
+.itinerary-button{
+ padding: 9px;
+ border-radius: 15px;
+ background-color: #DC2B00;
+ color: #FFF;
+ font-weight: bold;
+ border: none;
+ box-shadow: 0 3px 13px 1px rgba(220, 43, 0, 0.5);
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #FFF;
 }

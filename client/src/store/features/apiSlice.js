@@ -14,9 +14,9 @@ export const apiSlice = createApi({
       // The URL for the request is '"http://localhost:5000/all'
       query: () => '/all'
     }),
-    /*getItineraries: builder.query({
+    getItineraries: builder.query({
       query: () => '/itineraries/all'
-    }),*/
+    }),
     getOneItinerary: builder.query({
       query: title => `itineraries/${title}`
     })
