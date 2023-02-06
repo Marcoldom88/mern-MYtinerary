@@ -28,7 +28,7 @@ const Itineraries = () => {
   return (
     <main className="itinerariesContainer">
       <div className="itinerariesBackground">
-        <img className="MYtinerary" src="assets/MYtineraryLogo.png" alt="MYtinerary Logo"></img>
+      <img className="logo-itinerary" src="/assets/MYtineraryLogo.png" alt="MYtinerary Logo"></img>
         <CreateItineraries itineraries={itineraries} />
         <button className="itinerary-button">
           <Link to={{ pathname: '/BrowseCities' }}>
@@ -36,6 +36,11 @@ const Itineraries = () => {
           </Link>
         </button>
       </div>
+      <footer className="fixed-bottom">
+        <Link to={{ pathname: '/' }}>
+          <img className="home-icon" src="/assets/homeIcon.png" alt="House icon"></img>
+        </Link>
+      </footer>
     </main>  
   )
 }

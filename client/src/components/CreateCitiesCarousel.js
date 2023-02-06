@@ -2,6 +2,7 @@
 import { useState } from "react";
 import "../stylesheets/CreateCitiesCarousel.css";
 import Carousel from "./Carousel";
+import { Link } from "react-router-dom";
 
 const CreateCitiesCarousel = ({ cities }) => {
   const [data, setData] = useState(Object.values(cities))
@@ -52,6 +53,11 @@ const CreateCitiesCarousel = ({ cities }) => {
             onClick={handleOnClick}>Search for a new city</button>
         </div>
       </div>
+      <footer className="fixed-bottom">
+        <Link to={{ pathname: '/' }}>
+          <img className="home" src="assets/homeIcon.png" alt="House icon"></img>
+        </Link>
+      </footer>
     </main>
 )};
   

@@ -59,14 +59,24 @@
  font-weight: bold;
  border: none;
  box-shadow: 0 3px 13px 1px rgba(220, 43, 0, 0.5);
+ margin: 20px;
 }
 
-a {
+.itinerary-button a {
   color: #FFF;
   text-decoration: none;
 }
 
-a:hover {
+.itinerary-button a:hover {
   text-decoration: none;
   color: #FFF;
+}
+
+.logo-itinerary{
+  width:12rem;
+  margin: 10px;
+}
+
+.home-icon{
+  width: 50px;
 }
