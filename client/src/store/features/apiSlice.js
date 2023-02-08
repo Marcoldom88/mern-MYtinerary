@@ -13,17 +13,9 @@ export const apiSlice = createApi({
     getCities: builder.query({
       // The URL for the request is '"http://localhost:5000/all'
       query: () => '/all'
-    }),
-    getItineraries: builder.query({
-      query: () => '/itineraries/all'
-    }),
-    getOneItinerary: builder.query({
-      query: title => `itineraries/${title}`
     })
   })
 })
 
 // Export the auto-generated hook for the `getCities` query endpoint
 export const { useGetCitiesQuery } = apiSlice
-export const { useGetItinerariesQuery } = apiSlice
-export const { useGetOneItineraryQuery } = apiSlice
